@@ -65,3 +65,29 @@ small{
     font-size: 11px;
     color: #712518;
 }
+@media only screen and (max-width: 600px) {
+    div{
+        max-width: 420px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    p{
+        font-size: 11px;
+    }
+    small{
+        font-size: 8px;
+    }
+    .link a{
+        font-size: 9px;
+    }
+    .footer{
+        margin-bottom: 64px;
+    }
+}
