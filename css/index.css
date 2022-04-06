@@ -46,6 +46,13 @@ p{
     border-width: 2px 2px 2px 2px;
     padding: 14px;
 }
+.sbox{
+    border-color: #173950;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    padding: 14px;
+}
 span{
     color: #712518;
 }
