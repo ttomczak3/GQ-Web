@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>GamingQuizAPI</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-</head>
-<body>
-    <div class="title">
-        <h1>Gaming Quiz API</h1>
-    </div>
-    <div>
-        <h2>About</h2>
-        <p>
-            GamingQuizApi is a free API that puts your knowledge to the test with a collection of video game-related questions.
-        </p>
-    </div>
-    <div>
-        <h2>Usage</h2>
-        <p>Retrieve a list of cards.</p>
-        <p class="box"><span>GET</span> https://gamingquizapi.azurewebsites.net/api/card</p>
-        <p>Retrieve a single card with an id.</p>
-        <p class="box"><span>GET</span> https://gamingquizapi.azurewebsites.net/api/card/{id}</p>
-        <p>Retrieve a random card.</p>
-        <p class="box"><span>GET</span> https://gamingquizapi.azurewebsites.net/api/random/card</p>
-    </div>
-    <div>
-        <h2>Schema</h2>
-        <div class="sbox">
-            <p>{</p>
-            <p>&emsp; "id": 0,</p>
-            <p>&emsp; "question": "string",</p>
-            <p>&emsp; "answer": "string"</p>
-            <p>}</p>
+    <head>
+        <title>GamingQuizAPI</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Gaming Quiz API</h1>
         </div>
-    </div>
-    <div>
-        <p>Retrieve a random card example:</p>
-        <button id="generate">generate</button>
-        <h3>Question:</h3>
-        <p id="question"></p>
-        <h3>Answer:</h3>
-        <p id="answer"></p>
-    </div>
-    <div class="footer">
-        <hr>
-        <small>
-            gamingquizapi.com is free and will always be! However, maintaining this service costs $$$.
-            Donations would be appreciated to help refill the coffee pot.
-        </small>
-        <h6 class="link">
-            API DOCUMENTATION: <a href="https://gamingquizapi.azurewebsites.net/">gamingquizapi.azurewebsites.net</a>
-        </h6>
-        <small>
-            Legal disclaimer: This website and its creators are not affiliated with any affiliated corporation. 
-            All products, and brands mentioned on this website are the respective trademarks and copyrights of their owners.
-        </small>
-        <hr>
-        <a href="https://github.com/ttomczak3/GamingQuizAPI">
-            <img alt="GitHub" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-        </a>
-    </div>
-    <script>
-        kofiWidgetOverlay.draw('gamingquizapi', {
-            'type': 'floating-chat',
-            'floating-chat.donateButton.text': 'Donate',
-            'floating-chat.donateButton.background-color': '#173950',
-            'floating-chat.donateButton.text-color': '#fff'
-        });
-    </script>
-    <script src="js/card.js"></script>
-</body>
+        <div>
+            <h2>About</h2>
+            <p>
+            GamingQuizApi is a free API that puts your knowledge to the test with a collection of video game-related questions.
+            </p>
+        </div>
+        <div>
+            <h2>Usage</h2>
+            <p>Retrieve a list of cards.</p>
+            <p class="box"><span>GET</span> https://gamingquizapi.azurewebsites.net/api/card</p>
+            <p>Retrieve a single card with an id.</p>
+            <p class="box"><span>GET</span> https://gamingquizapi.azurewebsites.net/api/card/{id}</p>
+            <p>Retrieve a random card.</p>
+            <p class="box"><span>GET</span> https://gamingquizapi.azurewebsites.net/api/random/card</p>
+        </div>
+        <div>
+            <h2>Schema</h2>
+            <div class="sbox">
+                <p>{</p>
+                <p>&emsp; "id": 0,</p>
+                <p>&emsp; "question": "string",</p>
+                <p>&emsp; "answer": "string"</p>
+                <p>}</p>
+            </div>
+        </div>
+        <div>
+            <p>Retrieve a random card example:</p>
+            <button id="generate">generate</button>
+            <h3>Question:</h3>
+            <p id="question"></p>
+            <h3>Answer:</h3>
+            <p id="answer"></p>
+        </div>
+        <div class="footer">
+            <hr>
+            <small>
+                gamingquizapi.com is free and will always be! However, maintaining this service costs $$$.
+                Donations would be appreciated to help refill the coffee pot.
+            </small>
+            <h6 class="link">
+                API DOCUMENTATION: <a href="https://gamingquizapi.azurewebsites.net/">gamingquizapi.azurewebsites.net</a>
+            </h6>
+            <small>
+                Legal disclaimer: This website and its creators are not affiliated with any affiliated corporation. 
+                All products, and brands mentioned on this website are the respective trademarks and copyrights of their owners.
+            </small>
+            <hr>
+            <a href="https://github.com/ttomczak3/GamingQuizAPI">
+                <img alt="GitHub" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+            </a>
+        </div>
+        <script>
+            kofiWidgetOverlay.draw('gamingquizapi', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Donate',
+                'floating-chat.donateButton.background-color': '#173950',
+                'floating-chat.donateButton.text-color': '#fff'
+            });
+        </script>
+        <script src="js/card.js"></script>
+    </body>
 </html>
