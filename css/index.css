@@ -13,6 +13,9 @@ div {
     margin: auto;
     max-width: 480px;
 }
+.title {
+    max-width: 500px;
+}
 h1{
     text-align: center;
     font-family: 'Press Start 2P', cursive;
